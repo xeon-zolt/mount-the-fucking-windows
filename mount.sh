@@ -15,4 +15,4 @@ fi
 # tested with windows 10 dual boot
 windows_part=$(sudo fdisk -l | grep "Microsoft basic data" | cut -d" " -f1)   
 # sudo mount -t ntfs-3g -o ro /dev/sdaX /windows  
-sudo mount -t ntfs-3g -o ro $windows_part /windows 
+sudo mount -t ntfs-3g -o ro $windows_part $HOME/windows
